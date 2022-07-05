@@ -5,7 +5,7 @@ const int MAXN = 1e6 + 10;
 
 int Dp[MAXN][4] , Num[MAXN] , N;
 
-int Transfer(int i) {
+void Transfer(int i) {
     if(Num[i] == -1) {
         Dp[i][0] = Dp[i - 1][0];
         Dp[i][2] = Dp[i - 1][2] + 2;
